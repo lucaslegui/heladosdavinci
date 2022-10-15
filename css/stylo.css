@@ -1,0 +1,245 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bevan&family=Poppins&display=swap");
+
+/* paleta de colores https://www.canva.com/colors/color-palettes/icy-gradient/ */
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+
+body {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  min-height: 100%;
+  background-color: #c8f4f9;
+}
+
+.conteiner>* {
+  box-shadow: -1px 1px 7px 0px black;
+  border-radius: 4px;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+h3 {
+  padding: 20px 0;
+}
+
+/*          NAV BAR              */
+#nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: rgba(13, 152, 186, 0.7);
+  border: solid 1px black;
+  margin-right: auto;
+}
+
+#nav label:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
+.links {
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: rgba(218, 112, 214, 0.4);
+}
+
+li a {
+  display: block;
+  color: #3cacae;
+  text-decoration: none;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  list-style: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+li a:hover {
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+#btn-menu {
+  display: none;
+}
+
+#nav label {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  width: 50px;
+}
+
+#btn-menu:checked~.links {
+  display: flex;
+}
+
+/* HERO */
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  background-image: url(../img/header.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.titulo_cabecera {
+  font-family: "Bevan";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 3rem;
+  color: antiquewhite;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.desde {
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  letter-spacing: 3px;
+}
+
+/*   MAIN */
+
+#main {
+  border-color: black;
+  border-style: dotted;
+  padding: 5px;
+}
+
+#presentacion {
+  padding: 15px;
+  border: solid 1px;
+  background-color: rgba(218, 112, 214, 0.7);
+}
+
+#presentacion p {
+  text-align: justify;
+}
+
+#loMasVendido {
+  padding-top: 10px;
+  background-color: rgba(200, 162, 200, 0.7);
+}
+
+#loMasVendido .tarjetas {
+  display: flex;
+  
+}
+
+#ventas {
+display: flex;
+}
+
+/* FORMULARIO */
+
+#ventas .form {
+  width: 50%;
+  gap: 15px;
+  padding: 3em;
+}
+
+#ventas .mapa {
+  width: 50%;
+}
+
+#ventas .form label {
+  display: block;
+}
+
+#ventas .full {
+
+  display: block;
+  margin: 0 auto;
+}
+
+#ventas form p {
+  margin: 0;
+}
+
+#ventas form button {
+  width: 500px;
+  padding: 1em;
+  background-color: #3cacae;
+  border: 0;
+  box-shadow: 0 0 20px black;
+  text-transform: uppercase;
+}
+
+#ventas form button:hover {
+  background-color: #c26dbc;
+  color: white;
+  outline: 0;
+  transition: background-color 1s ease-out;
+}
+
+#ventas .mapa img {
+  max-width: 700px;
+  border-radius: 25px;
+}
+
+/* FOOTER */
+
+
+#pie .grupo1 {
+  display: flex;
+  background-color: #0a141d;
+  padding: 50px;
+}
+
+#pie .grupo1 h3{
+  color: white;
+  font-size: 40px;
+  
+}
+
+#pie .grupo1 p{
+  color: white;
+}
+
+#pie .grupo1 figure {
+display: block;
+width: 33%;
+
+}
+
+#pie .grupo1 .about {
+  width: 33%;
+
+}
+
+#pie .grupo1 .redes {
+  width: 33%;
+}
+
+#pie .grupo1 .redes .iconos a {
+  font-size: 70px;
+  display: inline-block;
+  text-decoration: none;
+  width: 120px;
+  line-height: 70px;
+  color: white;
+}
+
+#pie .grupo1 .redes .iconos a:hover{
+  color: #c26dbc;
+}
